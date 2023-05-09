@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Camdon Conard</title>
+    <style>
+        /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+        /* * * * * - - - - - MAIN BODY PARAMETERS - - - - - * * * * */
+        /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+        body {
+            height: 5000px;
+			background-image: url('brick-wall.jpg');
+			background-size: cover;
+			background-position: center;
+		}
+
+        /* * * * * SCROLL WHEEL * * * * */
+        /* style the scrollbar track */
+        ::-webkit-scrollbar-track {
+            background-color: #f1f1f1;
+        }
+
+        /* style the scrollbar thumb */
+        ::-webkit-scrollbar-thumb {
+            background-color: #888;
+            border-radius: 5px;
+        }
+
+        /* add hover effect to scrollbar thumb */
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #555;
+        }
+
+
+        /* * * * * * * * * * * * * * * * * * * * * * * * */
+        /* * * * * - - - - - PAGE ONE - - - - - * * * * */
+        /* * * * * * * * * * * * * * * * * * * * * * * * */
+        .page_one {
+            background-image: url('paper.jpg');
+            position: relative;
+            top: 20%;
+            left: 50%;
+            width: 1100px;
+            height: 1500px;
+			transform: translate(-50%, -50%);
+			padding: 20px;
+			border-radius: 20px;
+            border-style: solid;
+            border-width: 15px;
+        }
+
+        .banner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 140px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;   
+
+            position: relative;
+            top: 10%;
+            left: 50%;
+            width: 1000px;
+            height: 175px;
+			transform: translate(-50%, -50%);
+			border-radius: 15px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            border-style: solid;
+            border-width: 15px;
+        }
+    
+        .box1 {
+            width:410px;
+            height: 610px;
+            transform: translate(115%, 13%);
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.5);
+			z-index: 1;
+            border-style: solid;
+            border-width: 10px;
+            
+        }
+
+    
+        .picture1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width:400px;
+            height: 520px;
+            transform: translate(20%, -100%);
+			border-radius: 10px;
+			box-shadow: 0 0 40px rgba(0,0,0,0.5);
+			z-index: 1;
+            border-style: solid;
+            border-width: 10px; 
+        } 
+
+        .box2{
+            width:850px;
+            height: 430px;
+            transform: translate(13%, -85%);
+			border-radius: 10px;
+			box-shadow: 0 0 40px rgba(0,0,0,0.5);
+			z-index: 1;
+            border-style: solid;
+            border-width: 13px; 
+        }
+
+        /* * * * * * * * * * * * * * * * * * * * * * * * */
+        /* * * * * - - - - - PAGE TWO - - - - - * * * * */
+        /* * * * * * * * * * * * * * * * * * * * * * * * */
+        .page_two {
+            background-image: url('paper.jpg');
+            position: relative;
+            top: 15%;
+            left: 60%;
+            width: 1100px;
+            height: 1500px;
+			transform: translate(-50%, -50%);
+			padding: 20px;
+			border-radius: 20px;
+            border-style: solid;
+            border-width: 15px;
+        }
+
+        /* * * * * * * * * * * * * * * * * * * * * * * * */
+        /* * * * * - - - - - PAGE THREE - - - - - * * * * */
+        /* * * * * * * * * * * * * * * * * * * * * * * * */
+        .page_three {
+            background-image: url('paper.jpg');
+            position: relative;
+            top: 10%;
+            left: 45%;
+            width: 1100px;
+            height: 1500px;
+			transform: translate(-50%, -50%);
+			padding: 20px;
+			border-radius: 20px;
+            border-style: solid;
+            border-width: 15px;
+        }
+        
+        /* * * * * * * * * * * * * * * * * * * * * * * * */
+        /* * * * * - - - - - PICTURES - - - - - * * * * */
+        /* * * * * * * * * * * * * * * * * * * * * * * * */
+        #background {
+            max-width: 50%;
+            height: auto;
+        }
+
+        #selfie {
+            max-width: 100%;
+            height: auto;
+        }
+
+        #pin {
+            width: 80px;
+            transform: translate(1020px, -210px);
+            filter: brightness(70%);
+            height: auto;
+        }
+
+        /* * * * * * * * * * * * * * * * * * * * * * * * */
+        /* * * * * - - - - - BUTTONS - - - - - * * * * */
+        /* * * * * * * * * * * * * * * * * * * * * * * * */
+
+        #menu_button {
+            align-items: center;
+            font-size: 80px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;   
+            background-image: url('paper.jpg');
+            width: 250px;
+            height: 150px;
+            padding: 20px;
+			border-radius: 20px;
+            border-style: solid;
+            border-width: 10px;
+        }
+
+        #esc_menu_button {
+            align-items: center;
+            font-size: 80px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;   
+            background-image: url('paper.jpg');
+            width: 250px;
+            height: 150px;
+            padding: 20px;
+			border-radius: 20px;
+            border-style: solid;
+            border-width: 10px;
+        }
+
+        .menu_banner {
+            position: absolute;
+			background-image: url('paper.jpg');
+            width: 2500px;
+            height: 400px;
+
+			padding: 20px;
+			text-align: center;
+			font-size: 30px;
+            border-radius: 20px;
+            border-style: solid;
+            border-width: 15px;
+		}
+    
+    
+    </style>
+</head>
+<body scroll="yes">
+    <button id="menu_button"type="button" onclick="addRectangle()">MENU</button>
+    <button id="esc_menu_button"type="button" onclick="">BACK</button>
+
+    <div class="page_one">
+        <div class="banner">
+            <p>CAMDON  CONARD</p>
+        </div>
+    
+        <div class="box1">  
+            <p>CHECK OUT:</p>
+            <p>     about me</p>
+        </div>
+        <div class="picture1">  
+            <img id="selfie" src="selfNoB.png">
+        </div>
+        <div class="box2">
+            <p>     about me</p>
+        </div>
+    </div>
+
+    <div class="page_two">
+        <div class="banner">
+            <p>- MY PROJECTS -</p>
+        </div>
+        <img id="pin" src="pin.png">
+    </div>
+
+    <div class="page_three">
+        <div class="banner">
+            <p>- MORE -</p>
+        </div>
+    </div>
+
+    <script>
+		function addRectangle() {
+			// Create a new div element with the class "rectangle"
+			var newDiv = document.createElement("div");
+			newDiv.classList.add("menu_banner");
+			// Add some text to the rectangle header
+			var newContent = document.createTextNode("This is a rectangle header!");
+			newDiv.appendChild(newContent);
+			// Insert the new rectangle header before the first element in the body
+			var body = document.getElementsByTagName("body")[0];
+			body.insertBefore(newDiv, body.firstChild);
+		}
+	</script>
+</body>
+</html>

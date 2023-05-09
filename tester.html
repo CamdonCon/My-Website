@@ -1,0 +1,41 @@
+
+To add a rectangle header on click, you can create a new HTML element using JavaScript and add it to the page using the DOM (Document Object Model). Here's an example code snippet to achieve this:
+
+php
+Copy code
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Rectangle Header on Click</title>
+	<style>
+		/* Add some style to the rectangle header */
+		.rectangle {
+			background-color: #4CAF50;
+			color: white;
+			padding: 20px;
+			text-align: center;
+			font-size: 30px;
+			margin-bottom: 20px;
+		}
+	</style>
+</head>
+<body>
+	<!-- Create a button that triggers the function to add the rectangle header -->
+	<button onclick="addRectangle()">Add Rectangle Header</button>
+
+	<script>
+		function addRectangle() {
+			// Create a new div element with the class "rectangle"
+			var newDiv = document.createElement("div");
+			newDiv.classList.add("rectangle");
+			// Add some text to the rectangle header
+			var newContent = document.createTextNode("This is a rectangle header!");
+			newDiv.appendChild(newContent);
+			// Insert the new rectangle header before the first element in the body
+			var body = document.getElementsByTagName("body")[0];
+			body.insertBefore(newDiv, body.firstChild);
+		}
+	</script>
+</body>
+</html>
